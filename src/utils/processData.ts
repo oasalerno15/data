@@ -109,7 +109,6 @@ export function processStudentData() {
     },
     overall: {
       totalStudents: processedData.length,
-      averageStudyHours: processedData.reduce((sum, s) => sum + s.studyHoursNumeric, 0) / processedData.length,
       ...calculateFinancialStress(processedData)
     }
   };
